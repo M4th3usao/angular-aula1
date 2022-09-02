@@ -16,4 +16,7 @@ export class AppComponent {
   getIdade() {
     return 2022 - this.nascimento;
   }
+  getMinutos() {
+    return this.counter / 60;
+  }
 }
