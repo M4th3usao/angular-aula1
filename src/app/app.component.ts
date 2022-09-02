@@ -17,6 +17,9 @@ export class AppComponent {
     return 2022 - this.nascimento;
   }
   getMinutos() {
-    return this.counter / 60;
+    return Math.trunc(this.counter / 60);
+  }
+  getSegundos() {
+    return Math.trunc(this.counter % 60);
   }
 }
