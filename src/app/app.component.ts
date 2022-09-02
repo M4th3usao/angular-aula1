@@ -8,6 +8,10 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   name = 'Matheus Henrique';
   nascimento = 2001;
+  counter = 0;
+  timer = setInterval(() => {
+    this.counter = this.counter + 1;
+  });
 
   getIdade() {
     return 2022 - this.nascimento;
