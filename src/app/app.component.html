@@ -15,10 +15,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
   </div>
 </nav>
-<h2>
-  <u>{{ name }}</u>
-</h2>
+<p>
+  Nome: <u>{{ name }}</u>
+</p>
 <p>O ano de seu nascimento é: {{ nascimento }}</p>
 <p>
-  {{ name }}, você tem: <u>{{ 2022 - nascimento }} anos</u>
+  {{ name }}, você tem: <u>{{ getIdade() }} anos</u>
 </p>

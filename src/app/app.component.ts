@@ -8,4 +8,8 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   name = 'Matheus Henrique';
   nascimento = 2001;
+
+  getIdade() {
+    return 2022 - this.nascimento;
+  }
 }
