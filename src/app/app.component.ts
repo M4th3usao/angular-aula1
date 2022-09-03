@@ -8,10 +8,12 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   name = 'Matheus Henrique';
   nascimento = 2001;
+
   action = '-';
   round = 0;
   second = 5;
   counter = 0;
+
   timer = setInterval(() => {
     if (this.round < 1) this.action = 'PREPARE';
     else if (this.round > 8) this.action = 'DONE!';
