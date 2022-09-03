@@ -38,8 +38,9 @@ export class AppComponent {
       this.round += 1;
       this.second = 30;
     }
-  }, 1000);
+  }, 100);
 
+  /*
   getIdade() {
     return 2022 - this.nascimento;
   }
@@ -52,4 +53,5 @@ export class AppComponent {
   getNumbers() {
     return [1, 89, 35, 22, 17];
   }
+  */
 }
