@@ -15,6 +15,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
   </div>
 </nav>
+<!--
 <p>
   Nome: <u>{{ name }}</u>
 </p>
@@ -22,9 +23,64 @@
 <p>
   {{ name }}, você tem: <u>{{ getIdade() }} anos</u>
 </p>
+-->
 
-<hr />
-
+<!--
 <h2>contador: {{ counter }}s</h2>
 <p>{{ getMinutos() }}´{{ getSegundos() }}``</p>
 <p></p>
+-->
+
+<!--
+<div *ngFor="let n of getNumbers()">
+  {{ n }}:
+  <span *ngIf="n % 2 == 0"> PAR></span>
+  <span *ngIf="n % 2 != 0"> IMPAR></span>
+</div>
+-->
+
+<div class="Tabata" style="padding-top: 15px">
+  <div class="tabataTimers">
+    <h2>My Tabata Timer</h2>
+
+    <div id="tabataCards">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Action</h5>
+          <h6 id="app-action" class="card-subtitle mb-2 text-muted"></h6>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Time</h5>
+          <h6 id="app-time" class="card-subtitle mb-2 text-muted">
+            Card subtitle
+          </h6>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Round</h5>
+          <h6 id="app-round" class="card-subtitle mb-2 text-muted"></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tabataTimers{
+    background-color: purple;
+    padding: 50px;
+  }
+
+  #tabataCards{
+    display: flex;
+    flex-direction: row;
+  }
+  .card{
+    margin: 5px;
+  }
+</style>
