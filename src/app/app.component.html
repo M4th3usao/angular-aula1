@@ -15,29 +15,6 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
   </div>
 </nav>
-<!--
-<p>
-  Nome: <u>{{ name }}</u>
-</p>
-<p>O ano de seu nascimento é: {{ nascimento }}</p>
-<p>
-  {{ name }}, você tem: <u>{{ getIdade() }} anos</u>
-</p>
--->
-
-<!--
-<h2>contador: {{ counter }}s</h2>
-<p>{{ getMinutos() }}´{{ getSegundos() }}``</p>
-<p></p>
--->
-
-<!--
-<div *ngFor="let n of getNumbers()">
-  {{ n }}:
-  <span *ngIf="n % 2 == 0"> PAR></span>
-  <span *ngIf="n % 2 != 0"> IMPAR></span>
-</div>
--->
 
 <div class="Tabata" style="padding-top: 15px">
   <div class="tabataTimers">
@@ -63,6 +40,93 @@
           <h5 class="card-title">Round</h5>
           <div id="app-round">-</div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button
+        class="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="true"
+        aria-controls="collapseOne"
+      >
+        Meu dados
+      </button>
+    </h2>
+    <div
+      id="collapseOne"
+      class="accordion-collapse collapse show"
+      aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body">
+        <p>
+          Nome: <u>{{ name }}</u>
+        </p>
+        <p>O ano de seu nascimento é: {{ nascimento }}</p>
+        <p>
+          {{ name }}, você tem: <u>{{ getIdade() }} anos</u>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo"
+      >
+        Impar ou Par
+      </button>
+    </h2>
+    <div
+      id="collapseTwo"
+      class="accordion-collapse collapse"
+      aria-labelledby="headingTwo"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body">
+        <div *ngFor="let n of getNumbers()">
+          {{ n }}:
+          <span *ngIf="n % 2 == 0"> PAR></span>
+          <span *ngIf="n % 2 != 0"> IMPAR></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo"
+      >
+        Timer
+      </button>
+    </h2>
+    <div
+      id="collapseTwo"
+      class="accordion-collapse collapse"
+      aria-labelledby="headingTwo"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body">
+        <h2>contador: {{ counter }}s</h2>
+        <p>{{ getMinutos() }}´{{ getSegundos() }}``</p>
+        <p></p>
       </div>
     </div>
   </div>

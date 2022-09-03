@@ -32,6 +32,8 @@ export class AppComponent {
       document.getElementById('app-time').innerHTML = '-';
     }
 
+    this.counter = this.counter + 1;
+
     this.second -= 1;
     if (this.second == 0) {
       this.round += 1;
@@ -39,7 +41,6 @@ export class AppComponent {
     }
   }, 1000);
 
-  /*
   getIdade() {
     return 2022 - this.nascimento;
   }
@@ -52,5 +53,4 @@ export class AppComponent {
   getNumbers() {
     return [1, 89, 35, 22, 17];
   }
-  */
 }
