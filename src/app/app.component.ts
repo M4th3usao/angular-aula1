@@ -31,14 +31,13 @@ export class AppComponent {
     } else {
       document.getElementById('app-time').innerHTML = '-';
     }
-    this.counter = this.counter + 1;
 
     this.second -= 1;
     if (this.second == 0) {
       this.round += 1;
       this.second = 30;
     }
-  }, 100);
+  }, 1000);
 
   /*
   getIdade() {
